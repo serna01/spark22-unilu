@@ -102,3 +102,26 @@ runs/
 
 This structure ensures all key outputs from the training phase are organized and easily accessible for analysis and future use.
 
+
+## Submitting Results to the SPARK 2022 Challenge
+
+To submit the results to the **SPARK 2022 Challenge**, follow the steps below. The challenge details and submission platform can be found here:  
+[SPARK 2022 Challenge - Submit Results](https://codalab.lisn.upsaclay.fr/competitions/9079#participate-submit_results)
+
+---
+
+### 1. Generate the Submission File
+
+Run the `submission.py` script to generate a `submission.csv` file containing the test results in the required format:
+
+```bash
+python submission.py
+```
+
+To run it on the HPC, since the test directoy has 22000 images:
+
+```bash
+sbatch datasets/stream-1/test_submission.sh
+```
+Finally download the generated .csv, compress it into .zip file and upload the .zip for evaluation to the spark challenge webpage.
+
