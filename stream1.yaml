@@ -1,0 +1,17 @@
+path:  /mnt/aiongpfs/users/aserna/datasets/stream-1  # Path to your data folder
+train: images/train        # Folder with training images
+val: images/val           # Folder with validation images
+test: images/test 
+nc: 11
+names:  # Class names and indexes
+  0: proba_2
+  1: cheops
+  2: debris
+  3: double_star
+  4: earth_observation_sat_1
+  5: lisa_pathfinder
+  6: proba_3_csc
+  7: proba_3_ocs
+  8: smart_1
+  9: soho
+  10: xmm_newton
